@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #gamecontainer{
+            width: 640px;
+            height: 480px;
+            background: url("images/splashscreen.png");
+        }
+        .gamelayer{
+            width: 640px;
+            height: 480px;
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+<div id="gamecontainer">
+    <div id="gamestartscreen" class="gamelayer">
+        <span id="singleplayer" onclick="singleplayer.start();">Compaign</span>
+        <span id="multiplayer" onclick="multiplayer.start();">Multiplayer</span>
+    </div>
+
+
+    <div id="loadingscreen" class="gamelayer">
+        <div id="loadingmessage"></div>
+    </div>
+</div>
+</body>
+</html>
